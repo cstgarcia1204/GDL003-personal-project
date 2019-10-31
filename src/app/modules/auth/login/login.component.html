@@ -1,0 +1,43 @@
+<GridLayout><!--contenedor general-->
+    <GridLayout class="superBackground"><!--contenedor que tiene el background--></GridLayout>
+    <DockLayout style="padding: 25" ><!--contenedor de Login-->
+        <StackLayout dock="top"><!--apila los elementos-->
+            <Label class="title" text="Sign In"></Label>
+            <StackLayout marginTop="1%" class="white-box">
+                <Image style="margin-top:1%; height: 30%; width: 30%" src="https://i.imgur.com/g3hkPtz.png"></Image>
+                <Label text="Welcome Back!!" class="title-login big"></Label>
+                <Label text="We love to see you again" class="title-login small"></Label>
+                <TextField 
+                    class="tf-gray user"
+                    hint="Username or Email Address" 
+                    keyboardType="email"
+                    autocapitalizationType="none"
+                    style="margin-left: 15; margin-right: 5;"
+                ></TextField>
+                <TextField 
+                    class="tf-gray password"
+                    style="margin-left: 15; margin-right: 5;"
+                    hint="Password"
+                    secure="true"
+                ></TextField>
+                <Button
+                    clearHistory="true" 
+                    class="button button-one arrow"
+                    style="margin-top:2; margin-bottom: 15;" 
+                    nsRouterLink= "/home/reports"
+                ></Button>
+            </StackLayout>
+        </StackLayout>
+        <GridLayout dock="bottom" columns="*, *"><!--contenedor botones-->
+            <Button col="0" class="button button-one" style="margin-top: 10" text="Sign In"></Button>
+            <Button 
+                col="1" 
+                class="button button-three" 
+                style="margin-top: 10;" 
+                text="Sign Up"
+                nsRouterLink="/register"
+                ></Button>
+        </GridLayout>
+    </DockLayout>
+
+</GridLayout>

@@ -1,0 +1,10 @@
+.bottom-bar-line{
+    border-top-width:1;
+    border-top-color: rgba(128, 128, 128, 0.637);
+}
+
+.item-selected{
+    border-radius: 25;
+    background-color: $color_violet;
+    padding: 1;
+}

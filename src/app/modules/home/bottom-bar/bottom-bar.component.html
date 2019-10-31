@@ -1,0 +1,57 @@
+<GridLayout rows="*, 50">
+    <ng-content row="0"></ng-content>
+    <!--Tabs-->
+    <FlexboxLayout row="1" class="bottom-bar-line">
+        <StackLayout
+            width="25%"
+            verticalAlignment="center"
+        >
+            <Image
+                *ngIf="index != 0"
+                horizontalAlignment="center"
+                stretch="none"
+                src="https://i.imgur.com/HhVOVQE.png"></Image>
+            <StackLayout 
+                *ngIf="index !== 0" 
+                class="item-selected" 
+                orientation="horizontal"
+                horizontalAlignment="center"
+            >
+                <Label text="Home" style="color:white; margin-left: 6; margin-top: 4;"></Label>
+                <Image 
+                horizontalAlignment="center"
+                stretch="none"
+                style="margin-left: 6;"
+                src="https://i.imgur.com/SFjUYJa.png"></Image>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout
+            width="25%"
+            verticalAlignment="center"
+        >
+            <Image 
+                horizontalAlignment="center"
+                width="50%"
+                height="50%"
+                src="https://i.imgur.com/UQobEmb.png"></Image>
+        </StackLayout>
+        <StackLayout
+            width="25%"
+            verticalAlignment="center"
+        >
+            <Image 
+                horizontalAlignment="center"
+                stretch="none"
+                src="https://i.imgur.com/LI9gNkn.png"></Image>
+        </StackLayout>
+        <StackLayout
+            width="25%"
+            verticalAlignment="center"
+        >
+            <Image 
+                horizontalAlignment="center"
+                stretch="none"
+                src="https://i.imgur.com/Cfngta1.png"></Image>
+        </StackLayout>
+    </FlexboxLayout>
+</GridLayout>

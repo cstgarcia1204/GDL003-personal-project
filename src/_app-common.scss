@@ -1,0 +1,89 @@
+@import "./styles/login";
+@import "./styles/bottom-bar";
+
+
+.fontA{
+    font-family: "FontAwesome";
+}
+
+.title{
+    font-size: 42;
+    color: white;
+    font-weight: bold;
+}
+
+.white-box{
+    border-radius:10;
+    background-color:white;
+    opacity: 0.9;
+}
+
+.tf-gray{
+    font-size: 16;
+    border-radius: 5;
+    background-color: $color_gray_light;
+    opacity: 0.5;
+    padding-left: 35;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    &.user{
+        background-image: url("https://i.imgur.com/jmxy6at.png");
+        placeholder-color: $color_violet;
+    }
+    &.user-green{
+        background-image: url("https://i.imgur.com/flWr2GD.png");
+        placeholder-color: $color_green;
+    }
+    &.password{
+        background-image: url("https://i.imgur.com/Wq47aPe.png");
+        placeholder-color: $color_violet;
+    }
+    &.password-green{
+        background-image: url("https://i.imgur.com/ZxpdCwE.png");
+        placeholder-color: $color_green;
+    }
+    &.email-green{
+        background-image: url("https://i.imgur.com/KuKXboc.png");
+        placeholder-color: $color_green;
+    }
+}
+
+
+.button{
+    width: 150;
+    height: 45;
+    border-radius: 12;
+    &.arrow{
+        background-image: url("https://i.imgur.com/oQxpCRc.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+    }
+    &.button-one{
+        background-color: $color_violet;
+        color:white;
+
+    }
+    &.button-second{
+        background-color: $color_green;
+    }
+    &.button-three{
+        background-color: white;
+        color: $color_green;
+    }
+
+}
+
+.button-outline{
+    border-width: 1;
+    border-radius: 5;
+    background-color: white; 
+    height: 50;
+    width: 50;
+    &.facebook{
+        border-color: $color_blue;
+        background-image: url("https://i.imgur.com/YdiW4rP.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}

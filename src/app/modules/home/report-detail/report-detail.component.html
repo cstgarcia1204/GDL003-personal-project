@@ -1,0 +1,36 @@
+<StackLayout>
+    <StackLayout
+        height="250"
+        [backgroundImage]="report.photo"
+        backgroundPosition="center"
+        backgroundSize="cover"
+        backgroundRepeat="no-repeat"
+        backgroundColor= "#460633";
+
+        
+    >
+        <Label class="fontA" text="&#xf104;" style="color:white; font-size:36; padding:10;" (tap)="onBack"></Label>
+        <Label [text]="report.name" class=title padding="10" textWrap="true"></Label>
+        
+       
+    </StackLayout>
+    <StackLayout padding="7" fontWeight="bold">
+        <Label [text]="report.description" fontSize="20" textWrap="true"></Label>
+        <Label [text]="report.location" class="location" fontSize="20" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout>
+        <ContentView height="100%" width="100%">
+            <Mapbox
+                accessToken="pk.eyJ1IjoiY3N0Z2FyY2lhIiwiYSI6ImNrMmRzNDgwMjAyMGEzbG9mdHZiOTJ3YXoifQ.z5u-TG6aY6U72kx5XAtDvw"
+                [latitude]= "report.lat"    
+                [longitude]= "report.lng"
+                zoomLevel="14"
+                
+                (mapReady)="onMapReady($event, report)">
+            </Mapbox>
+          </ContentView> 
+    </StackLayout>
+    
+
+    
+</StackLayout>

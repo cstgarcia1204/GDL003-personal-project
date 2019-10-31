@@ -1,0 +1,47 @@
+<BottomBar index="0">
+    <GridLayout rows="180, *">
+        <StackLayout
+            row="0"
+            style="
+                background-image:url('https://i.imgur.com/XIkQOua.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-color: #460633;
+                padding: 10;
+
+            "
+        >
+        <Label class="title" text="Home"></Label>
+        <Label class="title" text="Search Reports" fontSize="20" padding="5"></Label>
+        <StackLayout class="white-box" padding="10"marginTop="5 ">
+            <GridLayout columns="25,*,25">
+                <Image col="0" horizontalAlignment="center" verticalAlignment="center" stretch="none" src="https://i.imgur.com/HpUjXFj.png"></Image>
+                <TextField 
+                    col="1" 
+                    hint="Search Report" 
+                    color="#78849E" 
+                    returnKeyType="done"
+                    (returnPress)="onReturnPress($event)"
+                ></TextField>
+                <Image col="2" horizontalAlignment="center" verticalAlignment="center" stretch="none" src="https://i.imgur.com/eNdM8VW.png"></Image>
+
+            </GridLayout>
+        </StackLayout>
+        </StackLayout>
+        <RadListView row="1" [items]="data">
+            <ng-template let-item="item">
+                <CardView margin="10" backgroundColor="red" elevation="20" radius="5" (tap)="onNavigate(item)")>
+                    <Label textWrap="true" [text]="item.name"></Label>
+                </CardView>
+            </ng-template>
+            <ListViewStaggeredLayout 
+                tkListViewLayout 
+                scrikkDirection="Vertical" 
+                spanCount="2">
+
+            </ListViewStaggeredLayout>
+        </RadListView>
+    </GridLayout>
+
+</BottomBar>

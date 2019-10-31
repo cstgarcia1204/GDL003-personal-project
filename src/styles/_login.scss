@@ -1,0 +1,20 @@
+.superBackground{
+    background-image: url("https://i.imgur.com/HlxF0So.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #460633;
+}
+
+.title-login, .app-name{
+    color: $color_violet;
+    text-align: center;
+    &.small {
+        font-weight: 300;
+        font-size: 14;
+    }
+    &.big {
+        font-weight: bold;
+        font-size: 40;
+    }
+}

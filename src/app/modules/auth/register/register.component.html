@@ -1,0 +1,60 @@
+<GridLayout><!--contenedor general-->
+    <GridLayout class="superBackground"><!--contenedor que tiene el background--></GridLayout>
+    <DockLayout styke="padding=25;">
+        <StackLayout dock="top">
+            <Label class="title" text="Sign Up"></Label>
+            <StackLayout marginTop="1%" class="white-box" >
+                <Label text="Let's Join Us" 
+                    class="title-login big" 
+                    style="color: #00ba40; margin-top:15;" 
+                ></Label>
+                <Label text="We would love you to join us" 
+                    class="title-login small" 
+                    style="color: #00ba40; margin-top:15;" 
+                ></Label>
+                <FlexboxLayout justifyContent="center" style="margin-bottom: 15; margin-top: 15;">
+                    <Button class="button-outline facebook"></Button>
+                </FlexboxLayout>
+                <Label text="We have multiple options for you to join us" 
+                    class="title-login small" 
+                    style="color: #ff4f9a;opacity: .4;"
+                ></Label>
+                <TextField 
+                    class="tf-gray user-green"
+                    hint="Name" 
+                    style="margin-left: 15; margin-right: 5;"
+                ></TextField>
+                <TextField 
+                    class="tf-gray email-green"
+                    hint="Username or Email Address" 
+                    keyboardType="email"
+                    autocapitalizationType="none"
+                    style="margin-left: 15; margin-right: 5;"
+                ></TextField>
+                <TextField 
+                    class="tf-gray password-green"
+                    style="margin-left: 15; margin-right: 5;"
+                    hint="Password"
+                    secure="true"
+                ></TextField>
+                <Button class="button button-second arrow" style="margin-top:2; margin-bottom: 15   "></Button>
+            </StackLayout>
+        </StackLayout>
+        <GridLayout dock="bottom" columns="*, *"><!--contenedor botones-->
+            <Button col="0" 
+                class="button button-three" 
+                style="margin-top: 10" 
+                text="Sign In"
+                nsRouterLink="/"
+                ></Button>
+            <Button 
+                col="1" 
+                class="button button-second" 
+                style="margin-top: 10; color: white;" 
+                text="Sign Up"
+                nsRouterLink="/register"
+                ></Button>
+        </GridLayout>
+    </DockLayout>
+
+</GridLayout>
